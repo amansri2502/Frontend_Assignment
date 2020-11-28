@@ -1,0 +1,80 @@
+.search {
+    width:35rem;
+    height: 8rem;
+    display: flex;
+    // align along y axis
+    align-items: center;
+    // main axis
+    justify-content: center;
+  
+    &__input {
+      //because input element do not inherit automatically font-family: inherit;
+      font-size: inherit;
+      background-color:#f4f2f2;
+      color: inherit;
+      border: none;
+      padding: 0.7rem 2rem;
+      // to make corners round
+      border-radius: 100px;
+      width: 90%;
+      transition: all 0.2s;
+      margin-right: -3.25rem;
+      @media(max-width:575px){
+        margin-right: -5rem;
+    }
+      
+      height:4rem;
+     
+      &:focus {
+        outline: none;
+        width: 100%;
+        background-color: #f0eeee;
+      }
+      // to set color of place holder
+      &::-webkit-input-placeholder {
+        font-weight: 100;
+        color: #ccc;
+      }
+    }
+    // select adjecent element
+    &__input:focus + &__button {
+  background-color:#f0eeee ;
+    }
+  
+    &__button {
+      border: none;
+      background-color: #f4f2f2;
+      &:focus {
+        outline: none;
+      }
+      &:active {
+        transform: translateY(2px);
+             }
+    }
+  
+    &__icon {
+      height: 1.5rem;
+      width: 1.5rem;
+      margin-top: .3rem;
+      // fill used to fill color in svg
+      fill: #999;
+    }
+  }
+
+
+
+  .Searching-section{
+    margin:2rem;
+      width:55rem;
+      height:2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @media(max-width:575px){
+        width:40rem;
+        img{
+          margin-left: 2rem;
+        }
+    }
+  }

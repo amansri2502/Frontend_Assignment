@@ -1,0 +1,64 @@
+
+.navbar{
+    height:100%;
+    width:13rem;
+    background-color:#0C0B0B;
+    border-radius: 2.4rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 1rem 0rem 2.5rem  rgba(0,0,0,0.2);
+    margin: 1rem;
+    
+    
+
+    @media(max-width:991px){
+        
+      }
+    @media(min-width:575px){
+        height: auto;
+        min-width: 10rem;
+        
+    }
+  
+    @media(max-width:575px){
+        display: none;
+        font-size: 70rem;
+    }
+
+
+    
+
+    &__logo{
+        cursor: pointer;
+        @media(max-width:575px){
+            height: auto;
+            width: 3rem;
+        }
+    }
+
+    &__icons{
+        display: flex;
+        flex-direction: column;
+        flex:0 0 60%;
+        justify-content: space-evenly;
+        &--fill{
+            transition: all .4s;
+            cursor: pointer;
+            &:hover{
+                transform: translateY(-.8rem);
+            
+            }
+        }
+        @media(max-width:575px){
+            height: auto;
+            width: 3rem;
+        }
+       
+    }
+   
+}
+
+
+

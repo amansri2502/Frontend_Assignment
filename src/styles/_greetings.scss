@@ -1,0 +1,40 @@
+.greetings {
+  width: 60rem;
+  @media(max-width:575px){
+    width: 47rem;
+}
+  height: 13rem;
+  display: flex;
+  align-items: center;
+  background-color: #f5f5f7;
+  justify-content: space-between;
+  border-radius: 1.4rem;
+
+  &__hello {
+    margin-left: 3.2rem;
+  }
+
+  &__hello h1 {
+    font-size: 3.6rem;
+    font-weight: 700;
+    font-family: "Baloo Bhaina 2", cursive;
+  }
+  &__hello p{
+      font-size: 1.6rem;
+      line-height: 2.6rem;
+      margin-top: -1rem;
+  }
+  &__image {
+    margin-right: 8rem;
+    @media(max-width:575px){
+      margin-right: 5rem;
+  }
+    
+    padding-bottom: 2.5rem;
+  }
+  &__image img {
+    height: 19rem;
+    width: 15rem;
+  }
+
+}

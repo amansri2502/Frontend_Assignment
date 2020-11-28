@@ -1,0 +1,150 @@
+
+.margin-top-small {
+  margin-top: 1rem;
+}
+.margin-left-small {
+  margin-left: 2rem;
+}
+.margin-left-medium{
+    margin-left: 5.5rem;
+    @media(max-width:575px){
+      margin-left: 2rem;
+  }
+}
+.margin-right-small {
+  margin-right: 0.7rem;
+}
+.padding-right-medium {
+  padding-right: 2.5rem;
+}
+.text-size-small {
+  font-size: 1.2rem;
+}
+.text-size-medium {
+  font-size: 3rem;
+}
+
+.text-bold {
+  font-weight: 600;
+}
+
+.navigation-button {
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  border: 2px solid #0c0b0b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.navigation-container {
+  width: 7.6rem;
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 2rem;
+
+  @media(max-width:575px){
+   
+    margin: 0 auto;
+    text-align: center;
+}
+}
+
+.layout {
+  display: flex;
+  
+  @media(max-width:575px){
+      flex-direction: column;
+      
+  }
+}
+.firstPage {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  padding: 2rem 2rem;
+
+  @media(max-width:575px){
+    padding: 4rem 0;
+    margin: 0 auto;
+}
+ 
+}
+.secondPage{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    padding-left: 2rem;
+    
+    @media(max-width:575px){
+      order: -1;
+      padding: 0 ;
+      margin: 0 auto;
+  }
+    
+}
+.course-progress-inliner {
+  display: flex;
+  @media(max-width:575px){
+    display: inline-block;
+
+}
+  align-items: center;
+}
+
+.heading-secondary h2 {
+  color: #0c0b0b;
+  font-family: "Baloo Bhaina 2", cursive;
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-left: .7rem;
+}
+.heading-tertiary {
+  color: #0c0b0b;
+  font-family: "Baloo Bhaina 2", cursive;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-left: 0.7rem;
+  &__notActive {
+    color: #0c0b0b98;
+  }
+}
+.course-nav{
+    width:70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.status_tile{
+    display:flex;
+    margin-top: 1.5rem;
+    margin-left:3rem;
+    margin-bottom: 2.5rem;
+}
+.stat_nav{
+    width:20rem;
+    margin-left: 3rem;
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.stat_heading{
+margin-left: 3rem;
+}
+.graph{
+    height:10rem;
+    width:10rem;
+}
+.courses{
+    margin-top: 2rem;
+    width: auto;
+    height: 37rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: center;
+    padding: 20px;
+    margin-left: -1rem;
+   
+}
