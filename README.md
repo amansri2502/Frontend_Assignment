@@ -1,4 +1,4 @@
-# Clickk Assignment 🚀
+# Clinikk Assignment 🚀
 
 ![Desktop preview](img1.jpeg)
 
